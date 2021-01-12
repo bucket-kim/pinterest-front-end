@@ -1,5 +1,125 @@
 .header {
-  background-color: aqua;
+  background-color: white;
   height: 80px;
   width: 100%;
+  flex: 1 1 auto;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  padding: 0 12px;
+}
+
+.header__input {
+  display: flex;
+  align-items: center;
+  background-color: #efefef;
+  flex: 1 1 auto;
+  height: 48px;
+  padding-left: 16px;
+  border-radius: 50px;
+  margin: 0 12px;
+}
+
+.header__input:hover {
+  background-color: #e1e1e1;
+  transition: background-color ease-in-out .2s;
+}
+
+.header__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  color: #333333;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+}
+
+.header__input:focus-within {
+  box-shadow: rgba(0, 132, 255, 0.5) 0px 0px 0px 4px;
+}
+
+.header__logo {
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: background-color ease-in-out .2s;
+}
+
+.header__home, .header__today, .header__following {
+  white-space: nowrap;
+  padding: 16px;
+  font-weight: 700;
+  font-size: 16.5px;
+  border-radius: 24px;
+  transition: background-color ease-in-out .2s;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  display: none;
+}
+
+.header__logo:hover, .header__home:hover, .header__today:hover, .header__following:hover {
+  background-color: #e1e1e1;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.header__home:active, .header__today:active, .header__following:active {
+  background-color: black;
+  color: white;
+  border-radius: 24px;
+}
+
+.pinterest__logo {
+  color: #e60022;
+}
+
+.notification, .message, .avatar, .downArrrow {
+  color: #767676;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: background-color ease-in-out .2s;
+}
+
+.notification:hover, .message:hover, .avatar:hover, .downArrrow:hover {
+  cursor: pointer;
+  background-color: #e1e1e1;
+  border-radius: 50px;
+}
+
+.notification:active, .message:active, .avatar:active {
+  color: black;
+  box-shadow: rgba(0, 132, 255, 0.5) 0px 0px 0px 4px;
+}
+
+.downArrrow:active {
+  color: black;
 }

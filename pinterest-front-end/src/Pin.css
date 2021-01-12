@@ -1,0 +1,22 @@
+.pin__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pin__container .medium {
+  width: 252px;
+  height: 400px;
+}
+
+.pin__container .medium img {
+  width: 236px;
+  height: 354px;
+}
+
+.pin__container img {
+  cursor: zoom-in;
+  object-fit: cover;
+  border-radius: 16px;
+}
