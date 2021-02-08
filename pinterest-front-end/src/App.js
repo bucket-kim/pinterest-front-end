@@ -14,7 +14,7 @@ function App() {
     return unsplash.get("https://api.unsplash.com/search/photos", {
       params: { 
         query: term, 
-        per_page: 30 
+        per_page: 20 
       }
     });
   }
@@ -42,8 +42,8 @@ function App() {
     db.collection("terms").onSnapshot((snapshot) => {
       let snapshotData = snapshot.docs;
 
-      if (snapshotData.length >= 30) {
-        snapshotData = snapshotData.slice(snapshotData.length - 10, snapshotData.length);
+      if (snapshotData.length >= 10) {
+        snapshotData = snapshotData.slice(snapshotData.length - 5, snapshotData.length);
       }
       snapshotData.map((doc) => {
         promises.push(makeAPICall(doc.data().term)
