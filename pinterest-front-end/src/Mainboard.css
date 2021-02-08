@@ -1,5 +1,7 @@
 .mainboard {
   display: flex;
-  width: 80%;
+  width: 100%;
+  justify-content: center;
   margin-top: 16px;
+  flex-wrap: wrap;
 }
